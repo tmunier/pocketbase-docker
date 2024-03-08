@@ -35,4 +35,4 @@ VOLUME /pb_data
 USER pocketbase
 EXPOSE 8090
 
-ENTRYPOINT ["/usr/local/bin/pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/pb_data"]
+ENTRYPOINT ["/usr/local/bin/pocketbase", "serve", "--http=127.0.0.1:8090", "--dir=/pb_data"]
